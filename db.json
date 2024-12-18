@@ -1,0 +1,28 @@
+{
+  "estudiantes": [
+    {
+      "id": "1",
+      "name": "Juancho Perez",
+      "email": "juan@outlook.com",
+      "registrationDate": "2024-01-01"
+    },
+    {
+      "id": "2",
+      "name": "maria fernanda salcedo de la rosa",
+      "email": "mfsalcedo@unibarranquilla.edu.co",
+      "registrationDate": "2024-11-01"
+    },
+    {
+      "id": "3",
+      "name": "martin de la hoz",
+      "email": "martina123@gmail.com",
+      "registrationDate": "2024-10-31"
+    },
+    {
+      "id": "4",
+      "name": "marco polo",
+      "email": "marcopolo2024@outlook.com",
+      "registrationDate": "2024-11-01"
+    }
+  ]
+}

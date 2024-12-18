@@ -1,0 +1,60 @@
+<div class="container mt-5 create-estudiante-form">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-header text-center p-0" style="background-image: url('https://www.debate.com.mx/__export/1716638169457/sites/debate/img/2024/05/20/estudiantes2.jpg_1902800913.jpg'); background-size: cover; background-position: center; height: 200px;">
+          <div style="background: rgba(0, 0, 0, 0.5); color: white; padding: 20px;">
+            <h2 class="text-light">Crear Nuevo Estudiante</h2>
+          </div>
+        </div>
+        
+        <div class="card-body">
+          <form [formGroup]="estudianteForm" (ngSubmit)="addEstudiante()">
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                formControlName="name"
+                class="form-control"
+                placeholder="Maria Salcedo"
+              />
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico:</label>
+              <input
+                type="text"
+                id="email"
+                formControlName="email"
+                class="form-control"
+                placeholder="mfsalcedo@unibarranquilla.edu.co"
+              />
+            </div>
+
+            <!-- Fecha de Registro -->
+            <div class="mb-3">
+              <label for="registrationDate" class="form-label">Fecha de Registro:</label>
+              <input
+                id="registrationDate"
+                type="date"
+                formControlName="registrationDate"
+                class="form-control"
+              />
+            </div>
+
+            <!-- Botón de Guardar -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" [disabled]="!estudianteForm.valid">
+                Guardar Estudiante
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

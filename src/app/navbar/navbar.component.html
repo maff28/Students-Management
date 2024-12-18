@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Título o Logo -->
+    <a class="navbar-brand" href="listar-estudiantes">Gestión de Estudiantes</a>
+    
+    <!-- Botón de colapso para dispositivos pequeños -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Enlaces de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/listar-estudiantes" routerLinkActive="active">Listar Estudiantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/create" routerLinkActive="active">Crear Estudiante</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

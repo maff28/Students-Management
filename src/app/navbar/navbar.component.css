@@ -1,0 +1,10 @@
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.active {
+  font-weight: bold;
+  color: #000;
+}
